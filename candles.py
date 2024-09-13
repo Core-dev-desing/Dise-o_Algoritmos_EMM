@@ -1,14 +1,23 @@
 def candles(a: list[int]) -> int:
     """
-    Args:
-        a (list[int]): The candles heights.
+    Args:  a (list[int]): The candles heights.
     
-    Returns:
-        int: The number of candles that are tallest
+    Returns: int: The number of candles that are tallest
     """
+    def candles(a: list[int]) -> int:
+    b = 0 # b es el quivalente de a en mi pseudo
+    c = 0
 
-    # your code here
-    pass
+    for i in range(0,len(a)-1): #no entiendo donde van los : que me marca como error en esta linea
+        if candles[i] > b:
+            b = candles[i]
+            c = 0
+            c = c + 1
+        else: 
+            if b == candles[i]:
+                c = c + 1
+     return c 
+
 
 if __name__ == "__main__":
     print(candles([4, 4, 1, 3])) # 2
