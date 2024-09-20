@@ -1,0 +1,17 @@
+def sum_Ma( a=[][]):
+    a = [][]
+    suma= 0
+    for i in range(3)
+        for j in range(3)
+            if (a[][]%2=0):
+                suma= suma+a[][]:
+ return suma:
+
+def matrizes(n=2):
+    matriz=[]
+    final=n
+    columna=n
+    for i=0 in range(fila):
+        filas=[]
+        for j in range(columna):
+            columna=[]
