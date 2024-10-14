@@ -1,6 +1,7 @@
 def Fibonachi(n):
+    n=0
     dict{
-        0:1
+        0:1,
         1:1
     }
     if n<=1:
