@@ -3,3 +3,4 @@ def Fibonachi(n):
         return 1
     else:
         Fibonachi(n)=Fibonachi(n-1)+Fibonachi(n-2)
+    return Fibonachi(n)
