@@ -27,4 +27,9 @@ while(k%n!=0){
                n=1 
                A[i]=k/n
                k=k%n
+  i=i+1
+for i=0 to n-1
+  if(A.cabeza!=A.cola)
+     return false
+  else return true
 }
