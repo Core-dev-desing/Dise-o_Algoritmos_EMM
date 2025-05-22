@@ -1,0 +1,16 @@
+.container{
+    background-color: black;
+}
+
+.colum-md-10 h1{
+    color: aliceblue;
+}
+
+.navbar{
+    background-color:#A88C71;
+}
+/* row */
+
+.row h1{
+    color: aliceblue;
+}
