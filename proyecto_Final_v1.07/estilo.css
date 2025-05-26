@@ -1,0 +1,216 @@
+:root {
+    --color-primario: #7B4618; /* Marrón medio */
+    --color-secundario: #BFAB67; /* Beige claro */
+    --color-terciario: #647332; /* Verde oliva (más claro) */
+    --color-verde-oscuro: #2E401C; /* Verde oliva (más oscuro) */
+    --color-fondo: #F8F9FA; /* Gris muy claro (similar al blanco) */
+    --color-texto-principal: #333; /* Gris oscuro */
+    --color-texto-secundario: #555; /* Gris medio */
+    --color-accento: #E44D26; /* Naranja (lo mantendremos para ciertos elementos) */
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+    
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-secundario) !important; /* Fondo beige claro para la navbar */
+    padding: 0.8rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: var(--color-primario) !important;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.nav-link {
+    color: var(--color-texto-principal) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-terciario) !important; /* Hover verde claro */
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid var(--color-verde-oscuro); /* Indicador activo verde oscuro */
+    padding-bottom: 0.3rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Slider */
+#slider-manteletas {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 400px; /* Para ajustar la altura */
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.9;
+}
+
+/* Platillos Destacados */
+#platillos-destacados .card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+#platillos-destacados .card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--color-terciario); /* Título de la card en verde claro */
+    margin-bottom: 0.75rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primario) !important;
+    border-color: var(--color-primario) !important;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #5e3512 !important; /* Un tono más oscuro al pasar el ratón */
+    border-color: #5e3512 !important;
+}
+
+/* Ofertas */
+#ofertas .alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #85640a;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#ofertas .alert-link {
+    font-weight: bold;
+    color: #644900;
+}
+
+#ofertas img {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Noticias */
+#noticias .accordion-button {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#noticias .accordion-button:not(.collapsed) {
+    color: var(--color-primario);
+    background-color: #e9ecef;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+
+#noticias .accordion-body {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: none;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+    color: var(--color-texto-secundario);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer h5 {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: var(--color-primario);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--color-terciario); /* Hover verde claro en el footer */
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Colapsable (General - aunque Bootstrap ya lo maneja) */
+.collapse {
+    transition: height 0.3s ease-in-out;
+}
+
+
+#avi{
+    padding-bottom: 10%;
+}
+
+.nos{
+    color: aliceblue;
+}
